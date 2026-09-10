@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Sadegh Ebrahimi | Portfolio",
+    "description": "Full-Stack Developer portfolio — projects, skills and contact."
+  },
+  "modal": {
+    "title": "Choose your language",
+    "subtitle": "Please select your preferred language",
+    "note": "You can change it anytime from the navbar.",
+    "english": "English",
+    "persian": "فارسی"
+  },
+  "nav": {
+    "logoFirst": "Sadegh",
+    "logoLast": "Ebrahimi",
+    "about": "About",
+    "skills": "Skills",
+    "languages": "Languages",
+    "projects": "Projects",
+    "contact": "Contact",
+    "menuLabel": "Open menu",
+    "closeLabel": "Close menu"
+  },
+  "hero": {
+    "badge": "Available for work",
+    "greeting": "Hello, I'm",
+    "name": "Sadegh Ebrahimi",
+    "title": "Full-Stack Developer",
+    "typing": [
+      "I build modern web apps.",
+      "I craft clean & fast UIs.",
+      "I love JavaScript, design & detail."
+    ],
+    "bio": "I design and develop fast, responsive and user-friendly web experiences with modern frontend technologies. Focused on clean code, premium dark UI, and smooth animations.",
+    "btnProjects": "View Projects",
+    "btnContact": "Contact Me",
+    "scroll": "Scroll down",
+    "stats": {
+      "projects": "Projects",
+      "experience": "Years Experience",
+      "clients": "Happy Clients"
+    }
+  },
+  "about": {
+    "badge": "About Me",
+    "title": "Turning ideas into real products",
+    "text1": "I am Sadegh Ebrahimi, a web developer specializing in front-end development, and I build websites and dashboards.",
+    "text2": "In addition to programming and website coding, I also work in the field of building light vehicles.",
+    "info": {
+      "locationLabel": "Location",
+      "location": "Iran/Mashhad",
+      "emailLabel": "Email",
+      "availabilityLabel": "Availability",
+      "availability": "At work"
+    }
+  },
+  "skills": {
+    "badge": "My Skills",
+    "title": "What I do best",
+    "subtitle": "Technologies and tools I use every day",
+    "programming": "Programming",
+    "design": "Design",
+    "tools": "Tools",
+    "level": "Proficiency"
+  },
+  "langSection": {
+    "badge": "Languages",
+    "title": "Languages I speak",
+    "subtitle": "Communication skills for global teamwork",
+    "native": "Native",
+    "fluent": "Fluent",
+    "intermediate": "Intermediate",
+    "beginner": "Beginner",
+    "englishName": "English",
+    "englishDesc": "Professional working proficiency",
+    "persianName": "Persian (Farsi)",
+    "persianDesc": "full professional and everyday fluency.",
+    "germanName": "German",
+    "germanDesc": "Basic communication — currently learning."
+  },
+  "projects": {
+    "badge": "Portfolio",
+    "title": "Featured projects",
+    "subtitle": "A selection of my recent work",
+    "demo": "Live Demo",
+    "code": "GitHub",
+    "p1": {
+      "title": "Dark E-Commerce UI",
+      "desc": "Modern responsive shop frontend with cart, filters and glassmorphism cards."
+    },
+    "p2": {
+      "title": "Dashboard Admin Panel",
+      "desc": "Analytics dashboard with charts, dark theme and sidebar navigation."
+    },
+    "p3": {
+      "title": "Movie Discovery App",
+      "desc": "Search and explore movies with smooth animations and API integration."
+    },
+    "p4": {
+      "title": "Restaurant Landing Page",
+      "desc": "Premium landing page with menu, reservation form and scroll effects."
+    },
+    "p5": {
+      "title": "Weather App",
+      "desc": "Clean weather frontend with geolocation and animated icons."
+    },
+    "p6": {
+      "title": "Portfolio Template",
+      "desc": "This bilingual RTL-ready portfolio template — free to reuse."
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Let's work together",
+    "subtitle": "Have a project in mind? Send me a message.",
+    "formTitle": "Send a message",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "infoTitle": "Contact info",
+    "emailDirect": "Email me directly",
+    "location": "Iran — working remotely worldwide",
+    "socialTitle": "Follow me",
+    "success": "Message sent successfully! I'll reply soon.",
+    "errorRequired": "Please fill out this field.",
+    "errorEmail": "Please enter a valid email address.",
+    "errorMin": "Message must be at least 10 characters."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Designed & built with HTML, CSS & JS",
+    "backToTop": "Back to top"
+  }
+}
