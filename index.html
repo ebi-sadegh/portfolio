@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sadegh Ebrahimi — Full-Stack Developer portfolio">
+  <title>Sadegh Ebrahimi|Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238B0000'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>S</text></svg>">
+</head>
+<body>
+
+  <div class="modal-overlay hidden" id="langModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-icon"><i class="fa-solid fa-language"></i></div>
+      <h2 id="modalTitle" data-i18n="modal.title">Choose your language</h2>
+      <p data-i18n="modal.subtitle">Please select your preferred language</p>
+      <div class="modal-btns">
+        <button class="btn btn-primary" data-lang-choice="en" type="button">English</button>
+        <button class="btn btn-outline" data-lang-choice="fa" type="button"><span data-i18n="modal.persian">فارسی</span></button>
+      </div>
+      <small data-i18n="modal.note">You can change it anytime from the navbar.</small>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#about" class="logo"><span data-i18n="nav.logoFirst">Sadegh</span> <span class="accent" data-i18n="nav.logoLast">Ebrahimi</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link active" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#languages" class="nav-link" data-i18n="nav.languages">Languages</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="flag-btn active" data-lang="en" title="English" aria-label="English">🇺🇸</button>
+          <button type="button" class="flag-btn" data-lang="fa" title="فارسی" aria-label="فارسی">🇮🇷</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <div class="container hero-centered">
+        <div class="avatar reveal">
+          <img src="photo_2026-09-07_18-11-14.jpg" alt="Sadegh Ebrahimi">
+          <span class="avatar-status" aria-hidden="true"></span>
+        </div>
+
+        <div class="reveal">
+          <span class="badge"><span class="dot"></span><span data-i18n="hero.badge">Available for work</span></span>
+          <p class="greeting" data-i18n="hero.greeting">Hello, I'm</p>
+          <h1 class="hero-name" data-i18n="hero.name">Sadegh Ebrahimi</h1>
+          <h2 class="hero-title" data-i18n="hero.title">Full-Stack Developer</h2>
+          <p class="typing-line"><span id="typing"></span><span class="caret" aria-hidden="true">|</span></p>
+          <p class="hero-bio" data-i18n="hero.bio">I design and develop fast, responsive and user-friendly web experiences with modern frontend technologies.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> <span data-i18n="hero.btnProjects">View Projects</span></a>
+            <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> <span data-i18n="hero.btnContact">Contact Me</span></a>
+          </div>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat"><strong data-count="12">0</strong><span data-i18n="hero.stats.projects">Projects</span></div>
+          <div class="stat"><strong data-count="3">0</strong><span data-i18n="hero.stats.experience">Years Experience</span></div>
+          <div class="stat"><strong data-count="4">0</strong><span data-i18n="hero.stats.clients">Happy Clients</span></div>
+        </div>
+
+        <div class="profile-strip reveal">
+          <div class="strip-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><small data-i18n="about.info.locationLabel">Location</small><strong data-i18n="about.info.location">Iran-‌<a href="">Mashhad</a></strong></div>
+          </div>
+          <div class="strip-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div><small data-i18n="about.info.emailLabel">Email</small><strong>ebiadegh@gmail.com</strong></div>
+          </div>
+          <div class="strip-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <div><small data-i18n="about.info.availabilityLabel">Availability</small><strong class="green" data-i18n="about.info.availability">Currently employed / At work</strong></div>
+          </div>
+          <div class="strip-social">
+            <a href="https://github.com/ebi-sadegh" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://t.me/S3dshots" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.instagram.com/sadeghebrahimi868/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-detail">
+      <div class="container narrow reveal">
+        <span class="section-badge" data-i18n="about.badge">About Me</span>
+        <h2 class="section-title" data-i18n="about.title">Turning ideas into real products</h2>
+        <p data-i18n="about.text1">I'm Sadegh Ebrahimi, a frontend-focused developer who enjoys building polished single-page websites.</p>
+        <p class="muted" data-i18n="about.text2">My stack is pure HTML, CSS and JavaScript — no backend needed.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-badge" data-i18n="skills.badge">My Skills</span>
+          <h2 class="section-title" data-i18n="skills.title">What I do best</h2>
+          <p class="muted" data-i18n="skills.subtitle">Technologies and tools I use every day</p>
+        </div>
+        <div class="cards-3">
+          <div class="card skill-card reveal">
+            <h3><i class="fa-solid fa-code"></i> <span data-i18n="skills.programming">Programming</span></h3>
+            <ul class="pill-list">
+              <li class="pill"><i class="fa-brands fa-html5"></i> HTML</li>
+              <li class="pill"><i class="fa-brands fa-css3-alt"></i> CSS</li>
+              <li class="pill"><i class="fa-brands fa-bootstrap"></i> BootStrap</li>
+              <li class="pill"><i class="fa-brands fa-js"></i> JavaScript</li>
+              <li class="pill"><i class="fa-brands fa-react"></i> React</li>
+              <li class="pill"><i class="fa-brands fa-python"></i> Python</li>
+            </ul>
+          </div>
+          <div class="card skill-card reveal">
+            <h3><i class="fa-solid fa-palette"></i> <span data-i18n="skills.design">Design</span></h3>
+            <ul class="pill-list">
+              <li class="pill"><i class="fa-solid fa-mobile-screen"></i> Web Responsive Design</li>
+              <li class="pill"><i class="fa-solid fa-pen-ruler"></i> UI/UX</li>
+            </ul>
+          </div>
+          <div class="card skill-card reveal">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> <span data-i18n="skills.tools">Tools</span></h3>
+            <ul class="pill-list">
+              <li class="pill"><i class="fa-brands fa-git-alt"></i> Git</li>
+              <li class="pill"><i class="fa-brands fa-github"></i> GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages" class="section section-muted">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-badge" data-i18n="langSection.badge">Languages</span>
+          <h2 class="section-title" data-i18n="langSection.title">Languages I speak</h2>
+          <p class="muted" data-i18n="langSection.subtitle">Communication skills for global teamwork</p>
+        </div>
+        <div class="lang-row">
+          <div class="card lang-card reveal">
+            <div class="lang-top"><span class="lang-flag">🇺🇸</span><span class="level fluent" data-i18n="langSection.fluent">Fluent</span></div>
+            <h3 data-i18n="langSection.englishName">English</h3>
+            <p class="muted" data-i18n="langSection.englishDesc">Professional working proficiency.</p>
+            <div class="dots" data-level="4" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="card lang-card reveal">
+            <div class="lang-top"><span class="lang-flag">🇮🇷</span><span class="level native" data-i18n="langSection.native">Native</span></div>
+            <h3 data-i18n="langSection.persianName">Persian (Farsi)</h3>
+            <p class="muted" data-i18n="langSection.persianDesc">Native language</p>
+            <div class="dots" data-level="5" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-badge" data-i18n="projects.badge">Portfolio</span>
+          <h2 class="section-title" data-i18n="projects.title">Featured projects</h2>
+          <p class="muted" data-i18n="projects.subtitle">A selection of my recent work</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-muted">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-badge" data-i18n="contact.badge">Contact</span>
+          <h2 class="section-title" data-i18n="contact.title">Let's work together</h2>
+          <p class="muted" data-i18n="contact.subtitle">Have a project in mind? Send me a message.</p>
+        </div>
+        <div class="contact-grid">
+          <form id="contactForm" class="card reveal" novalidate>
+            <h3 data-i18n="contact.formTitle">Send a message</h3>
+            <div class="field">
+              <label for="name" data-i18n="contact.nameLabel">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your name">
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="contact.emailLabel">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="contact.messageLabel">Message</label>
+              <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Tell me about your project..."></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+            <button onclick="alert('پیام شما ارسال شد(برای اینکه پیامت زودتر برسه تلگرام پیام بده)Your message has been sent (send a message via Telegram to ensure it arrives sooner).')" type="submit" class="btn btn-primary btn-full" id="submitBtn"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="contact.submit">Send Message</span></button>
+          </form>
+          <div class="contact-info reveal">
+            <div class="card info-card">
+              <h3 data-i18n="contact.infoTitle">Contact info</h3>
+              <a class="direct-mail" href="mailto:ebiadegh@gmail.com"><i class="fa-solid fa-envelope"></i><span><small data-i18n="contact.emailDirect">Email me directly</small><strong>ebiadegh@gmail.com</strong></span></a>
+              <p class="muted location-line"><i class="fa-solid fa-location-dot"></i> <span data-i18n="contact.location">Iran — Mashhad</span></p>
+            </div>
+            <div class="card info-card">
+              <h3 data-i18n="contact.socialTitle">Follow me</h3>
+               <div class="socials">
+               <a href="https://github.com/ebi-sadegh" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://t.me/S3dshots" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                 <a href="https://www.instagram.com/sadeghebrahimi868/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sadegh Ebrahimi — <span class="muted" data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="muted" data-i18n="footer.madeWith">Designed &amp; built with HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
